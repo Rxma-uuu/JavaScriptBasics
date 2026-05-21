@@ -55,6 +55,10 @@ let marks = 75;
 let bonus = 5;
 marks += bonus;
 let grade;
+if (marks > 100 || marks < 0) {
+    console.log('Invalid marks')
+}
+else{ 
 if (marks >= 90 && marks <= 100) {
     grade = 'A';
 } else if (marks >= 70 && marks < 90) {
@@ -62,13 +66,10 @@ if (marks >= 90 && marks <= 100) {
 } else if (marks >= 50 && marks < 70) {
     grade = 'C';
 } else {
-    if (marks > 100 && marks < 0) {
-        console.log('Invalid marks');
-    }
-    else {
     grade = 'F';
-    }
 }
+
+
 
 let result = (marks >= 50) ? "Pass" : "Fail";
 let remark;
@@ -92,4 +93,5 @@ console.log('Marks:' + marks);
 console.log('Grade:' + grade);
 console.log('Result:' + result);
 console.log('Remark:' + remark);
-console.log(`Marks: ${marks}, Grade: ${grade}, Result: ${result}, Remark: ${remark}`);  
+console.log(`Marks: ${marks}, Grade: ${grade}, Result: ${result}, Remark: ${remark}`);
+}  
